@@ -8,9 +8,9 @@ export interface IArea {
     last: string;
 }
 
-const MOVE_LEFT = new Buffer('1b5b3130303044', 'hex').toString();
+const MOVE_LEFT = '\u001b[1000D';
 const MOVE_UP_TO = '\u001b[_n_A';
-const CLEAR_AFTER = '\u001b[J'
+const CLEAR_AFTER = '\u001b[J';
 
 export class StdoutController {
 
