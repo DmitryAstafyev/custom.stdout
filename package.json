@@ -1,6 +1,6 @@
 {
   "name": "custom.stdout",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Allows split output in node stdout to areas. Helps to show \"static\" information in life-logs, like state of server/service and so on",
   "main": "./dist/stdout.js",
   "types": "./dist/stdout.d.ts",
@@ -10,8 +10,8 @@
     "test:unit": "./node_modules/.bin/jasmine-ts",
     "tslint": "./node_modules/.bin/tslint -c tslint.json './src/**/*{.ts,.tsx}'"
   },
-  "author": "Dmitry Astafyev",
-  "license": "MIT",
+  "author": "Dmitry Astafyev (D.Astafyev@outlook.com)",
+  "license": "Apache 2",
   "devDependencies": {
     "@types/jasmine": "^2.8.9",
     "@types/node": "^10.12.0",
@@ -26,5 +26,6 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/DmitryAstafyev/custom.stdout.git"
-  }
+  },
+  "keywords": [ "stdout", "console", "sticky", "fixed", "error" ]
 }
