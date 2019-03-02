@@ -10,6 +10,10 @@ Allows the developer to shows logs in a fixed area of output. It could be useful
 
 Usage
 
+```
+npm install custom.stdout --save
+```
+
 ```typescript
 import { StdoutController } from 'custom.stdout';
 
