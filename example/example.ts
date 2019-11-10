@@ -1,10 +1,13 @@
 import { StdoutController } from '../src/stdout';
 
-const stdout = new StdoutController(process.stdout);
+const stdout = new StdoutController(process.stdout, { handleStdoutGlobal: true});
+const bar1 = stdout.createProgressBar();
+const bar2 = stdout.createProgressBar({ caption: 'Operation #2', width: 60 });
 
 function logs() {
     setTimeout(() => {
         stdout.out(`${Math.random().toFixed(10)}-${Math.random().toFixed(10)}-${Math.random().toFixed(10)}-${Math.random().toFixed(10)}`);
+        console.log('HEY!\n', { ffff: 'fdfd '});
         logs();
     }, 100 + Math.random() * 250);
 }
@@ -23,6 +26,20 @@ function fixedAreaB() {
     }, 500 + Math.random() * 500);
 }
 
+function progress1() {
+    setTimeout(() => {
+        bar1.tick();
+        progress1();
+    }, 100 + Math.random() * 250);
+}
+function progress2() {
+    setTimeout(() => {
+        bar2.tick();
+        progress2();
+    }, 100 + Math.random() * 150);
+}
+progress1();
+progress2();
 logs();
 fixedAreaA();
-//fixedAreaB();
+// fixedAreaB();

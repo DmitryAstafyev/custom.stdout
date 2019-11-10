@@ -1,6 +1,6 @@
 {
   "name": "custom.stdout",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Allows split output in node stdout to areas. Helps to show \"static\" information in life-logs, like state of server/service and so on",
   "main": "./dist/stdout.js",
   "types": "./dist/stdout.d.ts",
@@ -27,5 +27,11 @@
     "type": "git",
     "url": "https://github.com/DmitryAstafyev/custom.stdout.git"
   },
-  "keywords": [ "stdout", "console", "sticky", "fixed", "error" ]
+  "keywords": [
+    "stdout",
+    "console",
+    "sticky",
+    "fixed",
+    "error"
+  ]
 }
